@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const joyasRoutes = require('./routes/joyas');  // Asegúrate de tener las rutas bien configuradas
+const joyasRoutes = require('./routes/joyas'); 
 
 app.use(express.json());
-app.use(joyasRoutes);  // Usamos las rutas para joyas
+app.use(joyasRoutes);  
 
 const PORT = 3000;
 app.listen(PORT, () => {
